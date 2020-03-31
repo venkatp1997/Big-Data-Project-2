@@ -1,2 +1,8 @@
-# venkatp1997
-Big Data Project-2: Hadoop
+# NoMoSQL
+1. Venkat Parthasarathy
+2. Ojas Narayanann
+3. Ahmet D
+
+# Slack Channel
+nomosql-hadoop
+
