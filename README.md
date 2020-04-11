@@ -27,6 +27,45 @@ As we have observed above with Kudu being restrictive on paritioning based on pr
 4. This will ensure that the records will always be in chronological order and help us answer the business questions where we need to group by year.
 5. If there is no update to the date, we can simply upsert the data which will update the record in return.
 
+# Kudu Results (Deliverable-4)
+Q3:
+```
++------+-------------------+
+| year | amount            |
++------+-------------------+
+| 2020 | 138265412390.2275 |
+| 2018 | 797483356326.3954 |
+| 2019 | 931884640402.8126 |
++------+-------------------+
+Fetched 3 row(s) in 2.12s
+```
+Q5:
+```
++------+-------------------+
+| year | amount            |
++------+-------------------+
+| 2020 | 138265430220.2075 |
+| 2018 | 797483356326.3954 |
+| 2019 | 931884640402.8126 |
++------+-------------------+
+Fetched 3 row(s) in 1.94s
+```
+Q8:
+```
++------+-------------------+
+| year | amount            |
++------+-------------------+
+| 2020 | 138265387834.0804 |
+| 2018 | 797483356326.3954 |
+| 2019 | 931884640402.8126 |
++------+-------------------+
+Fetched 3 row(s) in 1.89s
+```
+
+# Comments on performance
+1. For deliverable-2 and 3, performance slightly improved when we were working with partitioned tables and we can expect it to improve a lot in production as well.
+2. Subsequent queries in Kudu generally took slightly lesser time because we were only modifying data in one partition and the answer for only that is probably updated. This can produce a large performance boost when dealing with larger sized datasets and more partitions. 
+
 # Deployment Runbook
 1. Give permissions to run the script.  
 ```chmod +x main.sh ```
@@ -38,8 +77,3 @@ As we have observed above with Kudu being restrictive on paritioning based on pr
 ``` ./clear.sh```
 
 The .sql files for creating different views and tables ```<name_of_table/view>.sql ```
-
-
-
-
-
