@@ -7,6 +7,10 @@
 [nomosql-hadoop](https://csci5751s2020.slack.com/archives/G0115CNKLLX)
 
 # User Documentation
+## Data Ingestion
+1. Setting appropriate delimiter based on observing the CSV file.
+2. Deciding on data format. For example, we used decimal(38,4) for the prices field because using the default float/decimal included more values after the decimal point and some of those values after 4 were garbage values.
+
 ## Performance on the view using partitioned and non-partitioned data (Deliverable 3- Part B Q2)
 Aggregating queries from partitioned data can be faster because processing queries from partitions can be done in parallel and at the end result from all partitions can be aggregated. But in non-parititioned data, the query processing is done serially.
 So execution time is better partitioned data.
