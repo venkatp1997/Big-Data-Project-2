@@ -29,6 +29,7 @@ As we have observed above with Kudu being restrictive on paritioning based on pr
 
 # Kudu Results (Deliverable-4)
 Youtube Link: https://youtu.be/LKMVNENjUOU
+
 Q3:
 ```
 +------+-------------------+
