@@ -70,12 +70,25 @@ Fetched 3 row(s) in 1.89s
 
 # Deployment Runbook
 1. Give permissions to run the script.  
+
 ```chmod +x main.sh ```
 
 2. Execute the script.
+
 ``` ./main.sh```
 
+3. To execute Kudu script.
+
+``` 
+ cd kudu
+ chmod +x main_kudu.sh
+./main_kudu.sh
+```
+
 3. To remove all data from Impala and HDFS.
+
 ``` ./clear.sh```
 
-The .sql files for creating different views and tables ```<name_of_table/view>.sql ```
+The .sql files for creating different views and tables
+
+```<name_of_table/view>.sql ```
