@@ -1,0 +1,2 @@
+UPSERT INTO nomosql_sales_kudu.sales
+VALUES (6715218, 15, 1360, 423, 100, NOW()), (6715219, 11, 1689, 250, 800, NOW()), (6715221, 11, 1, 150, 100, NOW());
