@@ -28,6 +28,7 @@ As we have observed above with Kudu being restrictive on paritioning based on pr
 5. If there is no update to the date, we can simply upsert the data which will update the record in return.
 
 # Kudu Results (Deliverable-4)
+Youtube Link: https://youtu.be/LKMVNENjUOU
 Q3:
 ```
 +------+-------------------+
